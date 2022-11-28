@@ -84,7 +84,7 @@ else
 	fi 
 fi
 
-echo "${BLUE}Adding conda environment to jupyter${NC}"
+echo -e "${BLUE}Adding conda environment to jupyter${NC}"
 echo "y" | conda install -c anaconda ipykernel
 python -m ipykernel install --user --name=$CONDA_DEFAULT_ENV
 
